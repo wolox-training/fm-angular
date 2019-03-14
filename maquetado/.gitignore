@@ -6,3 +6,5 @@
 *.scss.map
 *.css
 
+## System ##
+.DS_Store
