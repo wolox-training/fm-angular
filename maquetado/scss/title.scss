@@ -1,11 +1,18 @@
-.image-title {
-  height: $title-decoration-height;
-  width: $title-decoration-width;
-}
-
 .text-title {
+  display: block;
   font-size: $text-big;
-  left: 55px;
-  position: fixed;
-  top: 35px;
+  height: $title-decoration-height;
+  position: relative;
+  transform: translate(55px, 35px);
+
+  &::before {
+    content: url('assets/triangle.svg');
+    height: $title-decoration-height;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translate(-55px, -35px);
+    width: $title-decoration-width;
+    z-index: -1;
+  };
 }
