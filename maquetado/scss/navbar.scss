@@ -1,0 +1,23 @@
+.navbar {
+  align-items: center;
+  background-color: $nav-background-color;
+  box-shadow: 5px 5px 4px $box-shadow-color;
+  display: flex;
+  height: $nav-height;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.logo-img {
+  height: $nav-logo-height;
+  justify-self: flex-start;
+  margin-left: 10px;
+}
+
+.nav-text {
+  font-size: $text-medium;
+  justify-self: flex-end;
+  margin: 10px;
+}
