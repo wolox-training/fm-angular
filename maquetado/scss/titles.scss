@@ -1,9 +1,12 @@
+$translate-x: 55px;
+$translate-y: 35px;
+
 .text-title {
   display: block;
   font-size: $text-big;
   height: $title-decoration-height;
   position: relative;
-  transform: translate(55px, 35px);
+  transform: translate($translate-x, $translate-y);
 
   &::before {
     content: url('assets/triangle.svg');
@@ -11,7 +14,7 @@
     left: 0;
     position: absolute;
     top: 0;
-    transform: translate(-55px, -35px);
+    transform: translate(-$translate-x, -$translate-y);
     width: $title-decoration-width;
     z-index: -1;
   };
