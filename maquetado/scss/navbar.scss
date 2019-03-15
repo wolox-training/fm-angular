@@ -5,6 +5,7 @@
   display: flex;
   height: $nav-height;
   justify-content: space-between;
+  padding: 0 10px;
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -13,11 +14,9 @@
 .logo-img {
   height: $nav-logo-height;
   justify-self: flex-start;
-  margin-left: 10px;
 }
 
 .nav-text {
   font-size: $text-medium;
   justify-self: flex-end;
-  margin: 10px;
 }
