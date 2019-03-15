@@ -1,0 +1,26 @@
+.footer {
+  background-color: $cerulean;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  padding: 30px;
+  text-align: center;
+  width:100%;
+}
+
+.footer-paragraph {
+  color: $nav-background-color;
+  font-size: $text-medium;
+  margin-bottom: 10px;
+}
+
+.copyright-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.copyright-text {
+  color: $nav-background-color;
+  flex-grow: 0;
+  font-size: $text-small;
+}
