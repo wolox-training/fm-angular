@@ -15,8 +15,8 @@
 }
 
 .copyright-text {
+  align-self: flex-end;
   color: $nav-background-color;
   flex-grow: 0;
-  align-self: flex-end;
   font-size: $text-small;
 }
