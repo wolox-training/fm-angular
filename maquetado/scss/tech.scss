@@ -2,8 +2,11 @@ $tech-width: 200px;
 $tech-border-radius: 5px;
 
 .techs {
+  align-items: stretch;
   display: flex;
-  justify-content: center;
+  flex-flow: row wrap;
+  justify-content: baseline;
+  padding: 5px 150px;
 }
 
 .tech {
@@ -12,6 +15,7 @@ $tech-border-radius: 5px;
   border-radius: $tech-border-radius;
   display: flex;
   flex-flow: column wrap;
+  margin: 10px;
   padding: 5px;
   position: relative;
   text-align: center;
@@ -32,7 +36,7 @@ $tech-border-radius: 5px;
 
 .tech-img {
   height: $tech-logo-size;
-  margin: 0 auto;
+  margin: 5px auto;
   width: $tech-logo-size;
 }
 
