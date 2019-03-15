@@ -14,13 +14,9 @@
   margin-bottom: 10px;
 }
 
-.copyright-container {
-  display: flex;
-  justify-content: flex-end;
-}
-
 .copyright-text {
   color: $nav-background-color;
   flex-grow: 0;
+  align-self: flex-end;
   font-size: $text-small;
 }
