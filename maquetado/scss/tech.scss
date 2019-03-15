@@ -4,7 +4,9 @@ $tech-border-radius: 5px;
 
 .techs {
   display: flex;
-  justify-content: center;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 5px 150px;
 }
 
 .tech {
@@ -13,7 +15,7 @@ $tech-border-radius: 5px;
   border-radius: $tech-border-radius;
   display: flex;
   flex-flow: column wrap;
-  height: $tech-height;
+  margin: 10px;
   position: relative;
   text-align: center;
   width: $tech-width;
@@ -33,7 +35,7 @@ $tech-border-radius: 5px;
 
 .tech-img {
   height: $tech-logo-size;
-  margin: 0 auto;
+  margin: 5px auto;
   width: $tech-logo-size;
 }
 
