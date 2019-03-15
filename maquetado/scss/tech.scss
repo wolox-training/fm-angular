@@ -1,5 +1,6 @@
 $tech-width: 200px;
 $tech-border-radius: 5px;
+$border-transition: transform linear 0.15;
 
 .techs {
   align-items: stretch;
@@ -15,7 +16,7 @@ $tech-border-radius: 5px;
   border-radius: $tech-border-radius;
   display: flex;
   flex-flow: column wrap;
-  margin: 10px;
+  margin: 20px;
   padding: 5px;
   position: relative;
   text-align: center;
@@ -28,11 +29,20 @@ $tech-border-radius: 5px;
     height: 100%;
     position: absolute;
     right: 10px;
+    transition: $border-transition;
     top: -10px;
     width: $tech-width;
     z-index: -1;
   }
+
+  &:hover {
+    &::before {
+      transform: translate(20px,20px);
+      transition: $border-transition;
+    }
+  }
 }
+
 
 .tech-img {
   height: $tech-logo-size;
