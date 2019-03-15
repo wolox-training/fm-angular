@@ -1,6 +1,6 @@
 $tech-width: 200px;
 $tech-border-radius: 5px;
-
+$transition-border: transform linear 0.15;
 .techs {
   align-items: stretch;
   display: flex;
@@ -28,7 +28,7 @@ $tech-border-radius: 5px;
     height: 100%;
     position: absolute;
     right: 10px;
-    transition: transform linear 0.15s;
+    transition: $transition-border;
     top: -10px;
     width: $tech-width;
     z-index: -1;
@@ -37,7 +37,7 @@ $tech-border-radius: 5px;
   &:hover {
     &::before {
       transform: translate(20px,20px);
-      transition: linear 0.15s;
+      transition: $transition-border;
     }
   }
 }
