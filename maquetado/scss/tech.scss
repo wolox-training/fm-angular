@@ -28,7 +28,7 @@ $tech-border-radius: 5px;
     height: 100%;
     position: absolute;
     right: 10px;
-    transition: linear 0.15s;
+    transition: transform linear 0.15s;
     top: -10px;
     width: $tech-width;
     z-index: -1;
