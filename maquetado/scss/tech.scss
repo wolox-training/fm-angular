@@ -2,10 +2,10 @@ $tech-width: 200px;
 $tech-border-radius: 5px;
 
 .techs {
+  align-items: stretch;
   display: flex;
   flex-flow: row wrap;
   justify-content: baseline;
-  align-items: stretch;
   padding: 5px 150px;
 }
 
@@ -20,7 +20,7 @@ $tech-border-radius: 5px;
   position: relative;
   text-align: center;
   width: $tech-width;
-
+  
   &::before {
     border-radius: $tech-border-radius;
     border: 2px solid $earls-green;
