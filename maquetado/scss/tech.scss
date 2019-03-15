@@ -1,0 +1,52 @@
+$tech-width: 200px;
+$tech-height: 300px;
+$tech-border-radius: 5px;
+
+.techs {
+  display: flex;
+  justify-content: center;
+}
+
+.tech {
+  align-content: center;
+  background-color: $earls-green;
+  border-radius: $tech-border-radius;
+  display: flex;
+  flex-flow: column wrap;
+  height: $tech-height;
+  position: relative;
+  text-align: center;
+  width: $tech-width;
+
+  &::before {
+    border-radius: $tech-border-radius;
+    border: 2px solid $earls-green;
+    content: '';
+    height: $tech-height;
+    position: absolute;
+    right: 10px;
+    top: -10px;
+    width: $tech-width;
+    z-index: -1;
+  }
+}
+
+.tech-img {
+  height: $tech-logo-size;
+  margin: 0 auto;
+  width: $tech-logo-size;
+}
+
+.tech-name {
+  font-size: $text-medium;
+  margin: 5px 0 15px 0;
+}
+
+.tech-year {
+  font-weight: bold;
+  margin: 0 0 20px 0;
+}
+
+.tech-description {
+  margin: 0 0 20px 0;
+}
