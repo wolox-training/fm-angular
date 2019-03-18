@@ -70,5 +70,9 @@ $border-transition: transform linear 0.15s;
       justify-self: center;
       padding: 0;
     }
+
+    &:nth-last-child(1){
+      border: none;
+    }
   }
 }
