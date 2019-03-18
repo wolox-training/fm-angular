@@ -55,6 +55,7 @@ $border-transition: transform linear 0.15s;
 @media (max-width: $media-breakpoint) {
   .techs {
     grid-template-columns: 100%;
+    padding: 5px;
   }
 
   .tech {
