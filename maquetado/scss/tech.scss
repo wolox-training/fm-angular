@@ -3,43 +3,31 @@ $tech-border-radius: 5px;
 $border-transition: transform linear 0.15s;
 
 .techs {
-  align-items: stretch;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: baseline;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   padding: 5px 150px;
 }
 
 .tech {
   align-content: center;
-  background-color: $earls-green;
-  border-radius: $tech-border-radius;
   display: flex;
   flex-flow: column wrap;
+  justify-content: center;
   margin: 20px;
   padding: 5px;
   position: relative;
   text-align: center;
   width: $tech-width;
 
-  &::before {
-    border-radius: $tech-border-radius;
-    border: 2px solid $earls-green;
-    content: '';
+  &:nth-child(1) {
+    border-right: 3px solid $earls-green;
+    grid-column: 1/2;
+    grid-row: 1/3;
     height: 100%;
-    position: absolute;
-    right: 10px;
-    transition: $border-transition;
-    top: -10px;
-    width: $tech-width;
-    z-index: -1;
-  }
-
-  &:hover {
-    &::before {
-      transform: translate(20px,20px);
-      transition: $border-transition;
-    }
+    justify-self: center;
+    padding-right: 25px;
   }
 }
 
