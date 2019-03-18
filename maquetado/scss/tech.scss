@@ -51,3 +51,23 @@ $border-transition: transform linear 0.15s;
 .tech-description {
   margin: 0 0 20px 0;
 }
+
+@media (max-width: $media-breakpoint) {
+  .techs {
+    grid-template-columns: 100%;
+  }
+
+  .tech {
+    border-bottom: 2px solid $earls-green;
+    justify-self: center;
+
+    &:nth-child(1) {
+      border-right: none;
+      grid-column: 1/1;
+      grid-row: 1/1;
+      height: auto;
+      justify-self: center;
+      padding: 0;
+    }
+  }
+}
