@@ -20,4 +20,11 @@
   color: $nav-background-color;
   flex-grow: 0;
   font-size: $text-small;
+  margin-top: 10px;
+}
+
+@media (max-width: $media-breakpoint) {
+  .copyright-text{
+    align-self: center;
+  }
 }
