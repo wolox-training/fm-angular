@@ -29,7 +29,7 @@ export class RegisterFormComponent implements OnInit {
      locale: 'en',
     }
     };
-    console.log(JSON.stringify(user));
+    console.log(user);
   }
 
 }
