@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+@import './scss/equalizer.scss';
+@import './scss/colors.scss';
+@import './scss/variables.scss';
+
+.form-label {
+  margin-top: 10px;
+}
+
+.form-input {
+  border-radius: 6px;
+  height: 30px;
+  margin:5px 0;
+  width: 100%;
+}
+
+%buttons-shared {
+  border-radius: 6px;
+  height: 40px;
+  width: 100%;
+}
+
+.primary-button {
+  @extend %buttons-shared;
+  background-color: $earls-green;
+  color: $white;
+  margin: 20px 0;
+}
+
+.secondary-button {
+  @extend %buttons-shared;
+  background-color: transparent;
+  border: 2px solid $earls-green;
+  color: $earls-green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+}

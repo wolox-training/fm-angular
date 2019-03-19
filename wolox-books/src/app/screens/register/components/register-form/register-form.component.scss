@@ -1,0 +1,25 @@
+@import '../../../../../scss/colors.scss';
+
+.register-form {
+  background-color: $porcelain;
+  border-top: 3px solid $cerulean;
+  padding: 50px 20px 20px 20px;
+  text-align: center;
+  width: 325px;
+}
+
+.register-title {
+  letter-spacing: 2px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.line{
+  border-top: 1px solid $silver;
+}
