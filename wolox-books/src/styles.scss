@@ -20,14 +20,14 @@
   width: 100%;
 }
 
-.submit-button {
+.primary-button {
   @extend %buttons-shared;
   background-color: $earls-green;
   color: $white;
   margin: 20px 0;
 }
 
-.login-button {
+.secondary-button {
   @extend %buttons-shared;
   background-color: transparent;
   border: 2px solid $earls-green;
