@@ -1,6 +1,6 @@
 <div class="register-form">
   <img class="register-form-image" src="../../../../../assets/wolox_logo.svg" alt="Wolox Logo">
-  <span class="register-title">B O O K S</span>
+  <span class="register-title">books</span>
   <form [formGroup]="registerForm" (ngSubmit)="submitForm()">
     <div class="form">
       <label class="form-label">First name</label>
@@ -14,7 +14,7 @@
         type="text"
         class="form-input"
         formControlName="last_name"
-        id="last_name">
+        id="flast_name">
       <label class="form-label">Email</label>
       <input
         type="email"
@@ -31,5 +31,5 @@
     </div>
   </form>
   <hr class="line">
-  <button class="login-button" type="submit">Login</button>
+  <a class="login-button" href="#">Login</a>
 </div>
