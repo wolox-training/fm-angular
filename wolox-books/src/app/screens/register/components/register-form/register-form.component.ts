@@ -21,14 +21,17 @@ export class RegisterFormComponent {
   submitForm() {
     const user = {
       user: {
-      ...this.registerForm.value,
-     passwordConfirmation: this.registerForm.value.password,
-     locale: 'en',
-    }
+        email: this.registerForm.value.email,
+        first_name: this.registerForm.value.firstName,
+        last_name: this.registerForm.value.lastName,
+        password: this.registerForm.value.password,
+        password_confirmation: this.registerForm.value.password,
+        locale: 'en',
+      }
     };
     console.log(JSON.stringify(user));
     this.userService.createUser(user).subscribe(
-      response => console.log('Success!'),
+      response => console.log(response),
       error => console.log(error)
     );
   }
