@@ -10,8 +10,8 @@ export class RegisterFormComponent {
 
   registerForm = new FormGroup({
     email: new FormControl(null, [Validators.required, Validators.email]),
-    first_name: new FormControl(null, Validators.required),
-    last_name: new FormControl(null, Validators.required),
+    firstName: new FormControl(null, Validators.required),
+    lastName: new FormControl(null, Validators.required),
     password: new FormControl(null, Validators.required),
   });
 
@@ -21,7 +21,7 @@ export class RegisterFormComponent {
     const user = {
       user: {
       ...this.registerForm.value,
-     password_confirmation: this.registerForm.value.password,
+     passwordConfirmation: this.registerForm.value.password,
      locale: 'en',
     }
     };
