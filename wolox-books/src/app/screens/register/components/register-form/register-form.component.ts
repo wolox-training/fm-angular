@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-register-form',
@@ -15,17 +16,23 @@ export class RegisterFormComponent {
     password: new FormControl(null, Validators.required),
   });
 
-  constructor() { }
+  constructor(private userService: UserService) { }
 
   submitForm() {
     const user = {
       user: {
-      ...this.registerForm.value,
-     passwordConfirmation: this.registerForm.value.password,
-     locale: 'en',
-    }
+        email: this.registerForm.value.email,
+        first_name: this.registerForm.value.firstName,
+        last_name: this.registerForm.value.lastName,
+        password: this.registerForm.value.password,
+        password_confirmation: this.registerForm.value.password,
+        locale: 'en',
+      }
     };
-    console.log(user);
+    this.userService.createUser(user).subscribe(
+      response => console.log('Success!'),
+      error => console.log('Sorry, we have an error')
+    );
   }
 
 }
