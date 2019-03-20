@@ -1,6 +1,4 @@
-<div class="register-form">
-  <img class="register-form-image" src="../../../../../assets/wolox_logo.svg" alt="Wolox Logo">
-  <span class="register-title">books</span>
+<app-auth-card>
   <form [formGroup]="registerForm" (ngSubmit)="submitForm()">
     <div class="form">
       <label class="form-label">First name</label>
@@ -32,4 +30,4 @@
   </form>
   <hr class="line">
   <a class="secondary-button" href="#" [routerLink]="['/login']">Login</a>
-</div>
+</app-auth-card>
