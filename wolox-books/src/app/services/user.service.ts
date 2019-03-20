@@ -12,4 +12,8 @@ export class UserService {
   createUser(user) {
     return this.http.post(environment.apiUrl + '/users', user);
   }
+
+  loginUser(user) {
+    return this.http.post(environment.apiUrl + '/users/sessions', user);
+  }
 }

@@ -7,12 +7,16 @@ import { RegisterComponent } from './screens/register/register.component';
 import { RegisterFormComponent } from './screens/register/components/register-form/register-form.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './screens/login/login.component';
+import { AuthCardComponent } from './components/auth-card/auth-card.component';
+import { LoginFormComponent } from './screens/login/components/login-form/login-form.component';
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent,
     RegisterFormComponent,
     LoginComponent,
+    AuthCardComponent,
+    LoginFormComponent,
   ],
   imports: [
     ReactiveFormsModule,

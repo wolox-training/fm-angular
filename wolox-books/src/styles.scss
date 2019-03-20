@@ -3,6 +3,14 @@
 @import './scss/colors.scss';
 @import './scss/variables.scss';
 
+.page-layout {
+  align-items: center;
+  align-content:center;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+}
+
 .form-label {
   margin-top: 10px;
 }
@@ -36,4 +44,9 @@
   flex-direction: column;
   justify-content: center;
   margin-top: 20px;
+  text-align: center;
+}
+
+.line{
+  border-top: 1px solid $silver;
 }
