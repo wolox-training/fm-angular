@@ -11,6 +11,12 @@
   justify-content: center;
 }
 
+.form{
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
 .form-label {
   margin-top: 10px;
 }
