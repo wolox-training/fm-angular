@@ -10,6 +10,7 @@ import { LoginComponent } from './screens/login/login.component';
 import { AuthCardComponent } from './components/auth-card/auth-card.component';
 import { LoginFormComponent } from './screens/login/components/login-form/login-form.component';
 import { AuthComponent } from './components/auth/auth.component';
+import { UnauthComponent } from './screens/unauth/unauth.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +20,7 @@ import { AuthComponent } from './components/auth/auth.component';
     AuthCardComponent,
     LoginFormComponent,
     AuthComponent,
+    UnauthComponent,
   ],
   imports: [
     ReactiveFormsModule,
