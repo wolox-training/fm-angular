@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { UserService } from 'src/app/services/user.service';
+import { LocalStorageService } from 'src/app/services/local-storage.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login-form',
@@ -14,11 +16,14 @@ export class LoginFormComponent{
     password: new FormControl(null, Validators.required),
   });
 
-  constructor(private userService: UserService) { }
+  constructor(private userService: UserService, private storage: LocalStorageService, private router: Router) { }
 
   submitForm() {
     this.userService.loginUser(this.loginForm.value).subscribe(
-      response => console.log(response),
+      response => {
+        this.storage.setValue('token', response['access_token']);
+        this.router.navigateByUrl('/auth');
+      },
       error => console.log(error)
     );
   }
