@@ -29,10 +29,9 @@ export class RegisterFormComponent {
         locale: 'en',
       }
     };
-    console.log(JSON.stringify(user));
     this.userService.createUser(user).subscribe(
-      response => console.log(response),
-      error => console.log(error)
+      response => console.log('Success!'),
+      error => console.log('Sorry, we have an error')
     );
   }
 
