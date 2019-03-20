@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { RegisterComponent } from './screens/register/register.component';
 import { RegisterFormComponent } from './screens/register/components/register-form/register-form.component';
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './screens/login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent,
-    RegisterFormComponent
+    RegisterFormComponent,
+    LoginComponent,
   ],
   imports: [
     ReactiveFormsModule,
