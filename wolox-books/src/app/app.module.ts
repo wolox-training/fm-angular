@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AuthCardComponent } from './components/auth-card/auth-card.component';
 import { AuthComponent } from './screens/auth/auth.component';
-import { UnauthComponent } from './screens/unauth/unauth.component';
 import { RegisterComponent } from './screens/unauth/screens/register/register.component';
 import { RegisterFormComponent } from './screens/unauth/screens/register/components/register-form/register-form.component';
 import { LoginComponent } from './screens/unauth/screens/login/login.component';
@@ -21,7 +20,6 @@ import { BookListComponent } from './screens/auth/screens/book-list/book-list.co
     AuthCardComponent,
     LoginFormComponent,
     AuthComponent,
-    UnauthComponent,
     BookListComponent,
   ],
   imports: [
