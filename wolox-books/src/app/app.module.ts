@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './screens/login/login.component';
 import { AuthCardComponent } from './components/auth-card/auth-card.component';
 import { LoginFormComponent } from './screens/login/components/login-form/login-form.component';
+import { AuthComponent } from './components/auth/auth.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,6 +18,7 @@ import { LoginFormComponent } from './screens/login/components/login-form/login-
     LoginComponent,
     AuthCardComponent,
     LoginFormComponent,
+    AuthComponent,
   ],
   imports: [
     ReactiveFormsModule,

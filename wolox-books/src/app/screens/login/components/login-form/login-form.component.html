@@ -1,21 +1,21 @@
 <app-auth-card>
-    <form [formGroup]="loginForm" (ngSubmit)="submitForm()">
-        <div class="auth-form">
-          <label class="form">Email</label>
-          <input
-            type="email"
-            class="form-input"
-            formControlName="email"
-            id="email">
-          <label class="form-label">Password</label>
-          <input
-            type="password"
-            class="form-input"
-            formControlName="password"
-            id="password">
-          <button class="primary-button" type="submit">Login</button>
-        </div>
-    </form>
-    <hr class="line">
-    <a class="secondary-button" href="#" [routerLink]="['/sign-up']">Sign up</a>
+  <form [formGroup]="loginForm" (ngSubmit)="submitForm()">
+      <div class="auth-form">
+        <label class="form">Email</label>
+        <input
+          type="email"
+          class="form-input"
+          formControlName="email"
+          id="email">
+        <label class="form-label">Password</label>
+        <input
+          type="password"
+          class="form-input"
+          formControlName="password"
+          id="password">
+        <button class="primary-button" type="submit">Login</button>
+      </div>
+  </form>
+  <hr class="line">
+  <a class="secondary-button" [routerLink]="['/sign-up']">Sign up</a>
 </app-auth-card>

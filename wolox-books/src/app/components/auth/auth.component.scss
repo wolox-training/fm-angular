@@ -1,0 +1,40 @@
+@import '../../../scss/colors.scss';
+@import '../../../scss//variables.scss';
+
+.navbar {
+  align-items: center;
+  background-color: $nav-background-color;
+  box-shadow: 7px 7px 6px $box-shadow-color;
+  display: flex;
+  height: $navbar-height;
+  justify-content: space-between;
+  left: 0;
+  padding: 0 100px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar-logo {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3px;
+  text-align: center;
+}
+
+.navbar-title {
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.logo-img {
+  height: 30px;
+  justify-self: flex-start;
+}
+
+.nav-text {
+  font-size: $text-medium;
+  justify-self: flex-end;
+}
