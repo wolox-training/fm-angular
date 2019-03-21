@@ -11,7 +11,7 @@ import { RegisterComponent } from './screens/unauth/screens/register/register.co
 import { RegisterFormComponent } from './screens/unauth/screens/register/components/register-form/register-form.component';
 import { LoginComponent } from './screens/unauth/screens/login/login.component';
 import { LoginFormComponent } from './screens/unauth/screens/login/components/login-form/login-form.component';
-import { BookListComponent } from './screens/auth/components/book-list/book-list.component';
+import { BookListComponent } from './screens/auth/screens/book-list/book-list.component';
 @NgModule({
   declarations: [
     AppComponent,
