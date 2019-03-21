@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AuthCardComponent } from './components/auth-card/auth-card.component';
 import { AuthComponent } from './screens/auth/auth.component';
 import { RegisterComponent } from './screens/unauth/screens/register/register.component';
@@ -11,6 +11,10 @@ import { RegisterFormComponent } from './screens/unauth/screens/register/compone
 import { LoginComponent } from './screens/unauth/screens/login/login.component';
 import { LoginFormComponent } from './screens/unauth/screens/login/components/login-form/login-form.component';
 import { BookListComponent } from './screens/auth/screens/book-list/book-list.component';
+import { TokenInterceptorService } from './services/token-interceptor.service';
+import { BookCardComponent } from './screens/auth/screens/book-list/components/book-card/book-card.component';
+import { CardsComponent } from './components/cards/cards.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +25,8 @@ import { BookListComponent } from './screens/auth/screens/book-list/book-list.co
     LoginFormComponent,
     AuthComponent,
     BookListComponent,
+    BookCardComponent,
+    CardsComponent,
   ],
   imports: [
     ReactiveFormsModule,
@@ -28,7 +34,11 @@ import { BookListComponent } from './screens/auth/screens/book-list/book-list.co
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [{
+    provide: HTTP_INTERCEPTORS,
+    useClass: TokenInterceptorService,
+    multi: true
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

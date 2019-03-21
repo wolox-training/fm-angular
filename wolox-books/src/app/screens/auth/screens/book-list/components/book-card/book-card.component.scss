@@ -1,0 +1,23 @@
+@import '../../../../../../../scss/variables.scss';
+
+img {
+  height: 200px;
+  width: 200px;
+}
+
+.book-title {
+  align-self: flex-start;
+  font-size: $text-medium;
+  font-weight: bold;
+  background-color: black;
+}
+
+/*.book-card {
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  padding: 10px;
+  width: 250px;
+}*/
