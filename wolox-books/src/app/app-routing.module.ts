@@ -6,11 +6,12 @@ import { LoginComponent } from './screens/unauth/screens/login/login.component';
 import { UnauthComponent } from './screens/unauth/unauth.component';
 import { BookListComponent } from './screens/auth/components/book-list/book-list.component';
 import { AuthGuard } from './guards/auth.guard';
+import { UnauthGuard } from './guards/unauth.guard';
 
 const routes: Routes = [
   { path: '', redirectTo: 'books/book-list', pathMatch: 'full'},
-  { path: 'login', component: LoginComponent, pathMatch: 'full'},
-  { path: 'sign-up', component: RegisterComponent, pathMatch: 'full'},
+  { path: 'login', component: LoginComponent, pathMatch: 'full', canActivate: [UnauthGuard]},
+  { path: 'sign-up', component: RegisterComponent, pathMatch: 'full', canActivate: [UnauthGuard]},
   { path: 'books', component: AuthComponent, canActivate: [AuthGuard], children: [
     { path: 'book-list', component: BookListComponent }
   ] }

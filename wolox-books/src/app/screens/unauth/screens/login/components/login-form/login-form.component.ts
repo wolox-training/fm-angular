@@ -26,7 +26,7 @@ export class LoginFormComponent implements OnInit {
     this.userService.loginUser(this.loginForm.value).subscribe(
       response => {
         this.storage.setValue('token', response['access_token']);
-        this.router.navigateByUrl('/books');
+        this.router.navigateByUrl('/books/book-list');
       },
       error => console.log(error)
     );
