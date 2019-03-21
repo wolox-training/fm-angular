@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class BookCardComponent {
 
-  @Input() book: any;
+  @Input() book: {};
 
   constructor() { }
 

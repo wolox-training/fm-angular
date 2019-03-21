@@ -1,5 +1,5 @@
 <div class="book-card">
-  <img class="book-img" src={{book.image_url}} alt="">
+  <img class="book-img" [src]="book.image_url" [alt]="book.title">
   <span class="book-title">{{book.title}}</span>
   <span class="book-author">{{book.author}}</span>
 </div>
