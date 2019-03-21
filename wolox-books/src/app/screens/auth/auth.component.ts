@@ -13,7 +13,7 @@ export class AuthComponent{
 
   logout() {
     this.storage.clearStorage();
-    this.router.navigateByUrl('');
+    this.router.navigateByUrl('/login');
   }
 
 }

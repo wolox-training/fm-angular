@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   templateUrl: './login-form.component.html',
   styleUrls: ['./login-form.component.scss']
 })
-export class LoginFormComponent{
+export class LoginFormComponent {
 
   loginForm = new FormGroup({
     email: new FormControl(null, [Validators.required, Validators.email]),
@@ -22,7 +22,7 @@ export class LoginFormComponent{
     this.userService.loginUser(this.loginForm.value).subscribe(
       response => {
         this.storage.setValue('token', response['access_token']);
-        this.router.navigateByUrl('/auth');
+        this.router.navigateByUrl('/books/book-list');
       },
       error => console.log(error)
     );

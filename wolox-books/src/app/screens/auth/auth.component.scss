@@ -1,6 +1,10 @@
 @import '../../../scss/colors.scss';
 @import '../../../scss//variables.scss';
 
+.books-layout {
+  min-height: 100vh;
+}
+
 .navbar {
   align-items: center;
   background-color: $nav-background-color;
