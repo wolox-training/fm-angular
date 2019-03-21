@@ -7,12 +7,12 @@ import { BooksService } from 'src/app/services/books.service';
   styleUrls: ['./book-list.component.scss'],
 })
 export class BookListComponent implements OnInit {
-
+  books: any;
   constructor(private bookService: BooksService) { }
 
   ngOnInit() {
     this.bookService.getBooks().subscribe(
-      response => console.log(response),
+      response => this.books = response,
       error => console.log(error)
     );
   }

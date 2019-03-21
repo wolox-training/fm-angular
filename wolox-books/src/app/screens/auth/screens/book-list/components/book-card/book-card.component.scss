@@ -1,23 +1,32 @@
 @import '../../../../../../../scss/variables.scss';
+@import '../../../../../../../scss/colors.scss';
 
-img {
-  height: 200px;
-  width: 200px;
-}
-
-.book-title {
-  align-self: flex-start;
-  font-size: $text-medium;
-  font-weight: bold;
-  background-color: black;
-}
-
-/*.book-card {
+.book-card {
   align-items: center;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   display: flex;
   flex-direction: column;
-  height: 250px;
-  padding: 10px;
+  height: 300px;
+  margin: 10px;
+  padding: 20px;
   width: 250px;
-}*/
+}
+
+.book-img {
+  height: 200px;
+  margin-bottom: 20px;
+  width: 200px;
+}
+
+.book-title {
+  align-self: flex-start;
+  font-size: $text-medium;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.book-author {
+  align-self: flex-start;
+  color: $author-color;
+  font-size: $text-small;
+}

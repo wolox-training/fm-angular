@@ -1,6 +1,9 @@
 @import '../../../../../scss/variables.scss';
 
 .book-list-layout{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-top: $navbar-height + 10px;
-  padding: 10px;
+  padding: 10px 100px;
 }
