@@ -1,4 +1,4 @@
-<div class="book-card">
+<div class="book-card" (click)="bookDetails()">
   <img class="book-img" [src]="book.image_url" [alt]="book.title">
   <span class="book-title">{{book.title}}</span>
   <span class="book-author">{{book.author}}</span>

@@ -10,4 +10,8 @@ export class BooksService {
   getBooks() {
     return this.http.get(environment.apiUrl + '/books');
   }
+
+  getBookDetails(id) {
+    return this.http.get(environment.apiUrl + '/books/' + id);
+  }
 }

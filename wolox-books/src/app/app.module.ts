@@ -13,6 +13,7 @@ import { LoginFormComponent } from './screens/unauth/screens/login/components/lo
 import { BookListComponent } from './screens/auth/screens/book-list/book-list.component';
 import { TokenInterceptorService } from './services/token-interceptor.service';
 import { BookCardComponent } from './screens/auth/screens/book-list/components/book-card/book-card.component';
+import { BookDetailComponent } from './screens/auth/screens/book-detail/book-detail.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { BookCardComponent } from './screens/auth/screens/book-list/components/b
     AuthComponent,
     BookListComponent,
     BookCardComponent,
+    BookDetailComponent,
   ],
   imports: [
     ReactiveFormsModule,
