@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   templateUrl: './login-form.component.html',
   styleUrls: ['./login-form.component.scss']
 })
-export class LoginFormComponent implements OnInit {
+export class LoginFormComponent {
 
   loginForm = new FormGroup({
     email: new FormControl(null, [Validators.required, Validators.email]),
@@ -17,10 +17,6 @@ export class LoginFormComponent implements OnInit {
   });
 
   constructor(private userService: UserService, private storage: LocalStorageService, private router: Router) { }
-
-  ngOnInit() {
-      console.log(this.userService.isUserLogged());
-  }
 
   submitForm() {
     this.userService.loginUser(this.loginForm.value).subscribe(

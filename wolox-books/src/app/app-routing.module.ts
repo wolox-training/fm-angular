@@ -3,7 +3,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { AuthComponent } from './screens/auth/auth.component';
 import { RegisterComponent } from './screens/unauth/screens/register/register.component';
 import { LoginComponent } from './screens/unauth/screens/login/login.component';
-import { UnauthComponent } from './screens/unauth/unauth.component';
 import { AuthGuard } from './guards/auth.guard';
 import { UnauthGuard } from './guards/unauth.guard';
 import { BookListComponent } from './screens/auth/screens/book-list/book-list.component';
