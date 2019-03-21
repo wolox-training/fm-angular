@@ -4,7 +4,7 @@ import { AuthComponent } from './screens/auth/auth.component';
 import { RegisterComponent } from './screens/unauth/screens/register/register.component';
 import { LoginComponent } from './screens/unauth/screens/login/login.component';
 import { UnauthComponent } from './screens/unauth/unauth.component';
-import { BookListComponent } from './screens/auth/components/book-list/book-list.component';
+import { BookListComponent } from './screens/auth/screens/book-list/book-list.component';
 import { AuthGuard } from './guards/auth.guard';
 import { UnauthGuard } from './guards/unauth.guard';
 
