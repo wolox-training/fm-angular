@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-
+import { Book } from '../../../../../../models/book.model';
 @Component({
   selector: 'app-book-card',
   templateUrl: './book-card.component.html',
@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class BookCardComponent {
 
-  @Input() book: {};
+  @Input() book: Book;
 
   constructor() { }
 
