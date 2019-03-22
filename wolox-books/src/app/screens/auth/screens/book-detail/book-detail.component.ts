@@ -17,7 +17,7 @@ export class BookDetailComponent implements OnInit {
     this.activatedRoute.paramMap.subscribe(
       paramMap => {
         const id = paramMap.get('id');
-        if (id) {
+        if (!id) {
           this.router.navigateByUrl('/books/book-list');
           return;
         }
@@ -26,7 +26,6 @@ export class BookDetailComponent implements OnInit {
           error => console.log(error)
         );
       }
-
     );
 
   }
