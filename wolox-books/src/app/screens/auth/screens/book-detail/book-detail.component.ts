@@ -16,16 +16,17 @@ export class BookDetailComponent implements OnInit {
   ngOnInit() {
     this.activatedRoute.paramMap.subscribe(
       paramMap => {
-        if (!paramMap.has('id')) {
+        const id = paramMap.get('id');
+        if (id) {
           this.router.navigateByUrl('/books/book-list');
           return;
         }
-        const id = paramMap.get('id');
         this.booksService.getBookDetails(id).subscribe(
           response => this.book = response,
           error => console.log(error)
         );
       }
+
     );
 
   }
