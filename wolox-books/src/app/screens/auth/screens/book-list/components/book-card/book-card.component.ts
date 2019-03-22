@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
+import { Book } from '../../../../../../models/book.model';
 
 @Component({
   selector: 'app-book-card',
@@ -8,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class BookCardComponent {
 
-  @Input() book: {};
+  @Input() book: Book;
 
   constructor(private router: Router) { }
 
