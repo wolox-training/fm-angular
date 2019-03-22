@@ -3,9 +3,9 @@
     <img class="book-image" [src]="book.image_url" alt="" srcset="">
     <div class="details">
       <h1 class="book-title">{{book.title|titlecase}} <span class="book-genre">({{book.genre| titlecase}})</span></h1>
-      <span class="book-detail-header">Book author: <span class="book-detail-text">{{book.author}}</span> </span>
-      <span class="book-detail-header">Publisher: <span class="book-detail-text">{{book.publisher}}</span> </span>
-      <span class="book-detail-header">Year of Publication: <span class="book-detail-text">{{book.year}}</span> </span>
+      <span class="book-detail-header" i18n>Book author: <span class="book-detail-text">{{book.author}}</span> </span>
+      <span class="book-detail-header" i18n>Publisher: <span class="book-detail-text">{{book.publisher}}</span> </span>
+      <span class="book-detail-header" i18n>Year of Publication: <span class="book-detail-text">{{book.year}}</span> </span>
     </div>
   </div>
 </div>
