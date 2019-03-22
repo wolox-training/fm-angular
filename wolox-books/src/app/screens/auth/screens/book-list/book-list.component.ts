@@ -7,7 +7,7 @@ import { Book } from '../../../../models/book.model';
   styleUrls: ['./book-list.component.scss'],
 })
 export class BookListComponent implements OnInit {
-  books: Book[];
+  books: Book[] = [];
   constructor(private bookService: BooksService) { }
 
   ngOnInit() {

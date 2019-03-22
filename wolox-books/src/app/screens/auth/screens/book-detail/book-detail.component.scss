@@ -1,0 +1,56 @@
+@import '../../../../../scss/colors.scss';
+@import '../../../../../scss/variables.scss';
+
+.books-details {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.book-card {
+  align-items: center;
+  background-color: $white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: row;
+  height: 300px;
+  margin: 10px;
+  padding: 20px 10px;
+  width: 60%;
+}
+
+.book-image {
+  height: 250px;
+  object-fit: cover;
+  width: 250px;
+}
+
+.details {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: column wrap;
+  height:100%;
+  margin-left: 20px;
+  width: 100%;
+}
+
+.book-title {
+  border-bottom: 3px solid $earls-green;
+  font-size: $text-big;
+  width: 100%;
+}
+
+.book-genre {
+  color: $author-color;
+  font-size: $text-medium;
+}
+
+.book-detail-header {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.book-detail-text {
+  color: $author-color;
+}
