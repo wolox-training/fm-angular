@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="d0a055c53d073869ed1738e1b1cc53dc1fc734c6" datatype="html">
+        <source>Book author: <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/><x id="INTERPOLATION" equiv-text="{{book.author}}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> </source>
+        <target>Autor </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/screens/auth/screens/book-detail/book-detail.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="27a6e404156ebaa5b631cb0c5c8eeceecdf18e97" datatype="html">
+        <source>Publisher: <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/><x id="INTERPOLATION" equiv-text="{{book.publisher}}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> </source>
+        <target>Editorial </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/screens/auth/screens/book-detail/book-detail.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e57df849bc898651ee6e88fa6d56d84ff01cabff" datatype="html">
+        <source>Year of Publication: <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/><x id="INTERPOLATION" equiv-text="{{book.year}}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> </source>
+        <target>Año de Publicación </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/screens/auth/screens/book-detail/book-detail.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
