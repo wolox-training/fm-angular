@@ -13,7 +13,7 @@ export class BooksService {
     return this.http.get<Book[]>(environment.apiUrl + '/books');
   }
 
-  getBookDetails(id) {
-    return this.http.get(environment.apiUrl + '/books/' + id);
+  getBookDetails(id): Observable<Book> {
+    return this.http.get<Book>(environment.apiUrl + '/books/' + id);
   }
 }
