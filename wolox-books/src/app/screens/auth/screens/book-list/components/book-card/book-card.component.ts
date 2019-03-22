@@ -14,7 +14,7 @@ export class BookCardComponent {
   constructor(private router: Router) { }
 
   bookDetails() {
-    this.router.navigateByUrl('/books/' + this.book['id']);
+    this.router.navigateByUrl(`/books/${this.book.id}`);
   }
 
 }
