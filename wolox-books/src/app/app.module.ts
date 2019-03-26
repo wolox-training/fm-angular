@@ -7,6 +7,8 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { TokenInterceptorService } from './services/token-interceptor.service';
 import { AuthModule } from './screens/auth/auth.module';
 import { UnauthModule } from './screens/unauth/unauth.module';
+import { StoreModule } from '@ngrx/store';
+import { booksReducer } from './store/books.reducer';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,8 @@ import { UnauthModule } from './screens/unauth/unauth.module';
     AppRoutingModule,
     HttpClientModule,
     AuthModule,
-    UnauthModule
+    UnauthModule,
+    StoreModule.forRoot({books: booksReducer})
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS,
