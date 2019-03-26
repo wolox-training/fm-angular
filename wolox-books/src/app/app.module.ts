@@ -9,6 +9,8 @@ import { AuthModule } from './screens/auth/auth.module';
 import { UnauthModule } from './screens/unauth/unauth.module';
 import { StoreModule } from '@ngrx/store';
 import { booksReducer } from './store/books.reducer';
+import { EffectsModule } from '@ngrx/effects';
+import { BooksEffects } from './store/books.effects';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { booksReducer } from './store/books.reducer';
     HttpClientModule,
     AuthModule,
     UnauthModule,
-    StoreModule.forRoot({books: booksReducer})
+    StoreModule.forRoot({books: booksReducer}),
+    EffectsModule.forRoot([BooksEffects])
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS,

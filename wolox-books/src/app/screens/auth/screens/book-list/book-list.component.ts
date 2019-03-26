@@ -1,23 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { BooksService } from 'src/app/services/books.service';
-import { Book } from '../../../../models/book.model';
 import { Store } from '@ngrx/store';
 import * as BooksReducer from '../../../../store/books.reducer';
-import { Observable } from 'rxjs';
+import * as BookActions from '../../../../store/books.actions';
 @Component({
   selector: 'app-book-list',
   templateUrl: './book-list.component.html',
   styleUrls: ['./book-list.component.scss'],
 })
 export class BookListComponent implements OnInit {
-  books: Observable<Book[]>;
+  books = this.store.select('books');
   constructor(private bookService: BooksService, private store: Store<BooksReducer.State>) { }
 
   ngOnInit() {
-    if (!this.books) {
-      this.bookService.getBooks();
-    }
-    this.books = this.store.select('books');
+    this.store.dispatch(new  BookActions.GetBooks());
   }
 
 }
