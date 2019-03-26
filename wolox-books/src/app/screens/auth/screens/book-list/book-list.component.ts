@@ -14,7 +14,9 @@ export class BookListComponent implements OnInit {
   constructor(private bookService: BooksService, private store: Store<BooksReducer.State>) { }
 
   ngOnInit() {
-    this.bookService.getBooks();
+    if (!this.books) {
+      this.bookService.getBooks();
+    }
     this.books = this.store.select('books');
   }
 
